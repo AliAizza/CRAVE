@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crave fast-food</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <a href="#"><li>HOME</li></a>
+                    <a href="#"><li>ABOUT</li></a>
+                    <a href="#"><li>RECIPES</li></a>
+                    <a href="#"><li>MENU</li></a>
+                    <a href="#"><li>CONTACT</li></a>
+                </ul>
+                <button type="button" class="btn">SIGN UP</button>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </div>
+        <div class="title">
+            <h1>Food <span>Unites Us</span> All<span>,</span><br> A <span>Universal</span> Journey of <span>Good Taste</span></h1>
+            <button type="button" class="btn">EXPLORE</button>
+        </div>
+        <div class="vertical-bar">
+            <div class="search-icon">
+                <i class="fa fa-th-list"></i>
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="social-icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-pinterest"></i>
+            </div>
+        </div>
+        <div class="notifications">
+            <div class="contents">
+                <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt nisi reiciendis nulla?</small>
+                <p><a href="#">PREV</a><a href="#">NEXT</a></p>
+            </div>
+            <div class="notification-img">
+                <img src="images/image2.jpg">
+            </div>
+        </div>
+    </div>
+    <script>
+        var menu = document.getElementById("nav-links");
+        function showMenu(){
+            menu.style.top = "0";
+        }
+        function hideMenu(){
+            menu.style.top = "-850px";
+        }
+    </script>
+</body>
+</html>
